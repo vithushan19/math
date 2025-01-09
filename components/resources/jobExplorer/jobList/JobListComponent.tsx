@@ -2,7 +2,6 @@ import Image from "next/legacy/image";
 import React from "react";
 
 const disabledJobs = [
-  "Cyber Security Analyst",
   "Product Manager",
   "Digital Marketer",
 ];
@@ -98,7 +97,7 @@ const JobListComponent = () => {
       image: "/images/resources/jobExplorer/CyberSecurityAnalyst.jpg",
       width: 100,
       height: 100,
-      link: "",
+      link: "././cyberSecurityAnalyst",
     },
     {
       title: "Mobile Developer",
@@ -126,14 +125,14 @@ const JobListComponent = () => {
       image: "/images/resources/jobExplorer/ProductManager.jpg",
       width: 100,
       height: 100,
-      link: "",
+      link: "././productManager",
     },
     {
       title: "Digital Marketer",
       image: "/images/resources/jobExplorer/DigitalMarketer.jpg",
       width: 100,
       height: 100,
-      link: "",
+      link: "././digitalMarketer",
     },
   ];
 
