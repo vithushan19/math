@@ -1,5 +1,25 @@
 import { QuizViewState } from "../../../../../components/resources/quizzes/shared/types";
+export type QuizDataHire = {
+  title: string;
+  body: string;
+  questions: QuizQuestionHire[];
+  currentQuestion: number;
+  progress: number;
+};
 
+export type QuizQuestionHire = {
+  title: string;
+  body: string;
+  maxSelections?: number;
+  options: QuizOptionHire[];
+};
+
+export type QuizOptionHire = {
+  name: string;
+  weight: number;
+  isSelected: boolean;
+  isCorrect: boolean;
+};
 export const quizData: QuizViewState = {
   title: "How hireable are you?",
   body: "Take this free quiz to reveal your hireability score for software engineering, product, or design roles.",
@@ -449,13 +469,9 @@ export const quizDataGE: QuizViewState = {
           weight: 0,
           isSelected: false,
         },
+
         {
           name: "Option 4",
-          weight: 0,
-          isSelected: false,
-        },
-        {
-          name: "Option 5",
           weight: 0,
           isSelected: false,
         },
